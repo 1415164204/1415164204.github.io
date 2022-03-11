@@ -771,7 +771,7 @@ insert  into &#96;user&#96;(&#96;id&#96;,&#96;user_name&#96;,&#96;password&#96;,
 
 <h2 id="5-条件构造器Wrapper"><a href="#5-条件构造器Wrapper" class="headerlink" title="5.条件构造器Wrapper"></a>5.条件构造器Wrapper</h2><h3 id="5-1-概述"><a href="#5-1-概述" class="headerlink" title="5.1 概述"></a>5.1 概述</h3><p>​    我们在实际操作数据库的时候会涉及到很多的条件。所以MP为我们提供了一个功能强大的条件构造器 <code>Wrapper</code> 。使用它可以让我们非常方便的构造条件。</p>
 <p>​    其继承体系如下：</p>
-<p>​    <img src="/img%5Cwrapper%E7%BB%A7%E6%89%BF%E4%BD%93%E7%B3%BB%E5%9B%BE.png" alt="image-20210823105447044"></p>
+<p>​    <img src="/2022/03/05/01-mybatisplus-ji-chu-pian/img%5Cwrapper%E7%BB%A7%E6%89%BF%E4%BD%93%E7%B3%BB%E5%9B%BE.png" alt="image-20210823105447044"></p>
 <p>​    在其子类<code>AbstractWrapper</code>中提供了很多用于构造Where条件的方法。</p>
 <p>​    <code>AbstractWrapper</code>的子类<code>QueryWrapper</code>则额外提供了用于针对Select语法的<code>select</code>方法。可以用来设置查询哪些列。</p>
 <p>​    <code>AbstractWrapper</code>的子类<code>UpdateWrapper</code>则额外提供了用于针对SET语法的<code>set</code>方法。可以用来设置对哪些列进行更新。</p>
@@ -879,7 +879,7 @@ FROM
 
 
 <h4 id="示例二-1"><a href="#示例二-1" class="headerlink" title="示例二"></a>示例二</h4><blockquote>
-<p>select(Class<T> entityClass, Predicate<TableFieldInfo> predicate)</p>
+<p>select(Class<T> entityClass, Predicate<TableFieldInfo> predicate)</TableFieldInfo></T></p>
 </blockquote>
 <p>方法的第一个参数为实体类的字节码对象，第二个参数为Predicate类型，可以使用lambda的写法，过滤要查询的字段 (主键除外) 。</p>
 <p>SQL语句如下：</p>
@@ -907,7 +907,7 @@ FROM
 
 
 <h4 id="示例三-1"><a href="#示例三-1" class="headerlink" title="示例三"></a>示例三</h4><blockquote>
-<p>select(Predicate<TableFieldInfo> predicate)</p>
+<p>select(Predicate<TableFieldInfo> predicate)</TableFieldInfo></p>
 </blockquote>
 <p>方法第一个参数为Predicate类型，可以使用lambda的写法，过滤要查询的字段 (主键除外) 。</p>
 <p>SQL语句如下：</p>
@@ -1889,7 +1889,7 @@ WHERE
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">21.1k</span>
+                        class="white-color">21.2k</span>
             
             
             
@@ -2130,8 +2130,8 @@ $(function () {
     if (windowWidth > 768) {
         document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
     }
-    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 
 </html>
