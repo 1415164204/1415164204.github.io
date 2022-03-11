@@ -7,7 +7,8 @@
     <meta name="keywords" content="图片测试01, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
     <meta name="description" content="hexo 图片上传步骤
 找到Hexo下的_config.yml里的post_asset_folder，把这个选项从false改成true。
-在Hexo目录下打开Git Brsh或cmd，执行一个下载上传图片插件的命令npm install ">
+
+在Hexo目录下打开Git Brsh或cmd，执行一个下载上传图片插件的命令npm install">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -457,7 +458,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    351
+                    433
                 </div>
                 
 
@@ -478,10 +479,14 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="hexo-图片上传步骤"><a href="#hexo-图片上传步骤" class="headerlink" title="hexo 图片上传步骤"></a>hexo 图片上传步骤</h1><ol>
-<li>找到Hexo下的_config.yml里的post_asset_folder，把这个选项从false改成true。</li>
-<li>在Hexo目录下打开Git Brsh或cmd，执行一个下载上传图片插件的命令npm install hexo-asset-image –save</li>
-<li>继续在Git Brsh或cmd下利用hexo n ’文章名’生成一个文章(.md)，这时就会在同级的目录下生成一个和文章同名的文件夹。</li>
-<li>在.md的文件中要插入图片时，先要把所要插入的图片放在生成的同名文件夹下。利用markdown的语法将文件引入文章中。</li>
+<li><p>找到Hexo下的_config.yml里的post_asset_folder，把这个选项从false改成true。</p>
+</li>
+<li><p>在Hexo目录下打开Git Brsh或cmd，执行一个下载上传图片插件的命令npm install hexo-asset-image –save</p>
+</li>
+<li><p>继续在Git Brsh或cmd下利用hexo n ’文章名’生成一个文章(.md)，这时就会在同级的目录下生成一个和文章同名的文件夹。</p>
+</li>
+<li><p>在.md的文件中要插入图片时，先要把所要插入的图片放在生成的同名文件夹下。利用markdown的语法将文件引入文章中。</p>
+</li>
 </ol>
 <h2 id="本地测试"><a href="#本地测试" class="headerlink" title="本地测试"></a>本地测试</h2><p>引入图片路径的方法：</p>
 <pre class="line-numbers language-html" data-language="html"><code class="language-html">![这是一张图片](图片测试01/pic.jpg "图片描述")<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -505,6 +510,22 @@
 <span class="token attr-name">3.hexo</span> <span class="token attr-value">d</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ol>
 <h3 id="遇到的坑-1"><a href="#遇到的坑-1" class="headerlink" title="遇到的坑"></a>遇到的坑</h3><p>暂无，图片路径和本地的一样，不用做改动。</p>
+<h2 id="Github测试（Gitee应该差不多）"><a href="#Github测试（Gitee应该差不多）" class="headerlink" title="Github测试（Gitee应该差不多）"></a>Github测试（Gitee应该差不多）</h2><h3 id="搭建-1"><a href="#搭建-1" class="headerlink" title="搭建"></a>搭建</h3><p>注：搭建过程详见</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click">https://www.bilibili.com/video/BV1mU4y1j72n?spm_id_from=333.337.search-card.all.click</a></p>
+<ol>
+<li><p>需要在本地hexo目录修改_config.yml文件</p>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">deploy</span><span class="token punctuation">:</span>
+  <span class="token key atrule">type</span><span class="token punctuation">:</span> git
+  <span class="token key atrule">repository</span><span class="token punctuation">:</span> git@github.com<span class="token punctuation">:</span>1415164204/1415164204.github.io.git    Github
+  <span class="token key atrule">branch</span><span class="token punctuation">:</span> main   <span class="token comment"># Github</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+</li>
+<li><p>在本地博客根路径下 cmd 中部署</p>
+</li>
+</ol>
+<pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">1.hexo</span> <span class="token attr-value">clean</span>
+<span class="token attr-name">2.hexo</span> <span class="token attr-value">g</span>
+<span class="token attr-name">3.hexo</span> <span class="token attr-value">d</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -1030,7 +1051,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">21.5k</span>
+                        class="white-color">21.6k</span>
             
             
             
