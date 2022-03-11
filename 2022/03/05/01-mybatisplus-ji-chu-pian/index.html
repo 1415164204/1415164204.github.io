@@ -771,7 +771,7 @@ insert  into &#96;user&#96;(&#96;id&#96;,&#96;user_name&#96;,&#96;password&#96;,
 
 <h2 id="5-条件构造器Wrapper"><a href="#5-条件构造器Wrapper" class="headerlink" title="5.条件构造器Wrapper"></a>5.条件构造器Wrapper</h2><h3 id="5-1-概述"><a href="#5-1-概述" class="headerlink" title="5.1 概述"></a>5.1 概述</h3><p>​    我们在实际操作数据库的时候会涉及到很多的条件。所以MP为我们提供了一个功能强大的条件构造器 <code>Wrapper</code> 。使用它可以让我们非常方便的构造条件。</p>
 <p>​    其继承体系如下：</p>
-<p>​    <img src="/2022/03/05/01-mybatisplus-ji-chu-pian/img%5Cwrapper%E7%BB%A7%E6%89%BF%E4%BD%93%E7%B3%BB%E5%9B%BE.png" alt="image-20210823105447044"></p>
+<p>​    <img src="/2022/03/05/01-mybatisplus-ji-chu-pian/wrapper%E7%BB%A7%E6%89%BF%E4%BD%93%E7%B3%BB%E5%9B%BE.png" alt="wrapper继承体系图"></p>
 <p>​    在其子类<code>AbstractWrapper</code>中提供了很多用于构造Where条件的方法。</p>
 <p>​    <code>AbstractWrapper</code>的子类<code>QueryWrapper</code>则额外提供了用于针对Select语法的<code>select</code>方法。可以用来设置查询哪些列。</p>
 <p>​    <code>AbstractWrapper</code>的子类<code>UpdateWrapper</code>则额外提供了用于针对SET语法的<code>set</code>方法。可以用来设置对哪些列进行更新。</p>
