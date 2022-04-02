@@ -534,7 +534,7 @@ Vue+SpringBoot
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>访问测试 ：<a target="_blank" rel="noopener" href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a> ，可以看到swagger的界面；</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731132229265.png" alt="image-20200731132229265"></p>
+<p><img src="/2022/04/02/swagger/image-20200731132229265.png" alt="image-20200731132229265"></p>
 </li>
 </ol>
 <h2 id="配置Swagger"><a href="#配置Swagger" class="headerlink" title="配置Swagger"></a>配置Swagger</h2><ol>
@@ -567,7 +567,7 @@ Vue+SpringBoot
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>重启项目，访问测试 <a target="_blank" rel="noopener" href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a>  看下效果；</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731161851136.png" alt="image-20200731161851136"></p>
+<p><img src="/2022/04/02/swagger/image-20200731161851136.png" alt="image-20200731161851136"></p>
 </li>
 </ol>
 <h2 id="配置扫描接口"><a href="#配置扫描接口" class="headerlink" title="配置扫描接口"></a>配置扫描接口</h2><ol>
@@ -582,7 +582,7 @@ Vue+SpringBoot
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>重启项目测试，由于我们配置根据包的路径扫描接口，所以我们只能看到一个类</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731165837391.png" alt="image-20200731165837391"></p>
+<p><img src="/2022/04/02/swagger/image-20200731165837391.png" alt="image-20200731165837391"></p>
 </li>
 <li><p>除了通过包路径配置扫描接口外，还可以通过配置其他方式扫描接口，这里注释一下所有的配置方式：</p>
 <pre class="line-numbers language-none"><code class="language-none">basePackage(final String basePackage) // 根据包路径扫描接口
@@ -624,7 +624,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
       <span class="token punctuation">.</span><span class="token function">build</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ol>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731190614381.png" alt="image-20200731190614381"></p>
+<p><img src="/2022/04/02/swagger/image-20200731190614381.png" alt="image-20200731190614381"></p>
 <ol start="2">
 <li><p>如何动态配置当项目处于test、dev环境时显示swagger，处于prod时不显示？</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Bean</span>
@@ -649,16 +649,16 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
 <li><p>dev测试环境</p>
   <pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">8081</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>  <img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731193109826.png" alt="image-20200731193109826"></p>
+<p>  <img src="/2022/04/02/swagger/image-20200731193109826.png" alt="image-20200731193109826"></p>
 <p>  项目运行结果</p>
-<p>  <img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731193425090.png" alt="image-20200731193425090"></p>
+<p>  <img src="/2022/04/02/swagger/image-20200731193425090.png" alt="image-20200731193425090"></p>
 </li>
 <li><p>pro测试环境</p>
   <pre class="line-numbers language-properties" data-language="properties"><code class="language-properties"><span class="token attr-name">server.port</span><span class="token punctuation">=</span><span class="token attr-value">8082</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>  <img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731194455510.png" alt="image-20200731194455510"></p>
+<p>  <img src="/2022/04/02/swagger/image-20200731194455510.png" alt="image-20200731194455510"></p>
 <p>  项目运行结果</p>
-<p>  <img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731194559290.png" alt="image-20200731194559290"></p>
+<p>  <img src="/2022/04/02/swagger/image-20200731194559290.png" alt="image-20200731194559290"></p>
 </li>
 </ul>
 </li>
@@ -673,7 +673,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>重启项目查看分组</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731195354714.png" alt="image-20200731195354714"></p>
+<p><img src="/2022/04/02/swagger/image-20200731195354714.png" alt="image-20200731195354714"></p>
 </li>
 <li><p>如何配置多个分组？配置多个分组只需要配置多个docket即可：</p>
 <pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token annotation punctuation">@Bean</span>
@@ -690,7 +690,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>重启项目查看即可</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731195543102.png" alt="image-20200731195543102"></p>
+<p><img src="/2022/04/02/swagger/image-20200731195543102.png" alt="image-20200731195543102"></p>
 </li>
 </ol>
 <h2 id="实体配置"><a href="#实体配置" class="headerlink" title="实体配置"></a>实体配置</h2><ol>
@@ -738,7 +738,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 </li>
 <li><p>重启查看测试</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731200413725.png" alt="image-20200731200413725"></p>
+<p><img src="/2022/04/02/swagger/image-20200731200413725.png" alt="image-20200731200413725"></p>
 </li>
 </ol>
 <p><font color="red">注：并不是因为@ApiModel这个注解让实体显示在这里了，而是只要出现在接口方法的返回值上的实体都会显示在这里，而@ApiModel和@ApiModelProperty这两个注解只是为实体添加注释的</font>。</p>
@@ -809,12 +809,12 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
     <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731201755001.png" alt="image-20200731201755001"></p>
+<p><img src="/2022/04/02/swagger/image-20200731201755001.png" alt="image-20200731201755001"></p>
 </li>
 <li><p>进行try it out测试</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731202958255.png" alt="image-20200731202958255"></p>
+<p><img src="/2022/04/02/swagger/image-20200731202958255.png" alt="image-20200731202958255"></p>
 <p>测试结果</p>
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731203034702.png" alt="image-20200731203034702"></p>
+<p><img src="/2022/04/02/swagger/image-20200731203034702.png" alt="image-20200731203034702"></p>
 </li>
 </ol>
 <p><strong>总结：</strong></p>
@@ -834,7 +834,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>2.9.2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731204929854.png" alt="image-20200731204929854"></p>
+<p><img src="/2022/04/02/swagger/image-20200731204929854.png" alt="image-20200731204929854"></p>
 <p>2、bootstrap-ui  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/doc.html">http://localhost:8080/doc.html</a></strong></p>
 <pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!-- 引入swagger-bootstrap-ui包 /doc.html--&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -843,7 +843,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.9.1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731205550845.png" alt="image-20200731205550845"></p>
+<p><img src="/2022/04/02/swagger/image-20200731205550845.png" alt="image-20200731205550845"></p>
 <p>3、Layui-ui  <strong>访问 <a target="_blank" rel="noopener" href="http://localhost:8080/docs.html">http://localhost:8080/docs.html</a></strong></p>
 <pre class="line-numbers language-xml" data-language="xml"><code class="language-xml"><span class="token comment">&lt;!-- 引入swagger-ui-layer包 /docs.html--&gt;</span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
@@ -863,7 +863,7 @@ ant(final String antPattern) // 通过ant()控制<span aria-hidden="true" class=
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>1.0.6<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p><img src="https://gitee.com/lzh_gitee/springboot_image/raw/master/img/image-20200731205723914.png" alt="image-20200731205723914"></p>
+<p><img src="/2022/04/02/swagger/image-20200731205723914.png" alt="image-20200731205723914"></p>
 
                 
             </div>
@@ -1629,8 +1629,8 @@ $(function () {
     if (windowWidth > 768) {
         document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
     }
-    </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+    </script>
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script><!-- hexo-inject:begin --><!-- hexo-inject:end --></body>
 
 </html>
