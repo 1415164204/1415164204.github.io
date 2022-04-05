@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Redis</title>
+      <link href="/2022/04/05/redis-zhun-bei-gong-zuo/"/>
+      <url>/2022/04/05/redis-zhun-bei-gong-zuo/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Redis-准备工作"><a href="#Redis-准备工作" class="headerlink" title="Redis 准备工作"></a>Redis 准备工作</h1><h3 id="1、Linux-虚拟机"><a href="#1、Linux-虚拟机" class="headerlink" title="1、Linux 虚拟机"></a>1、Linux 虚拟机</h3><p>打开需要用到的端口：</p><ul><li>查看端口状态</li></ul><pre class="line-numbers language-none"><code class="language-none">firewall-cmd --zone=public --query-port=6379/tcp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>开启端口</li></ul><pre class="line-numbers language-none"><code class="language-none">firewall-cmd --zone=public --add-port=6379/tcp --permanent<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>防火墙重载</li></ul><pre class="line-numbers language-none"><code class="language-none">firewall-cmd --reload<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ul><li>再次查看，如果是yes则成功开启</li></ul><pre class="line-numbers language-none"><code class="language-none">firewall-cmd --zone=public --query-port=6379/tcp<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>使用redis期间，虚拟机保持打开（redis在虚拟机上）</p><h3 id="2、RedisDesktopManager"><a href="#2、RedisDesktopManager" class="headerlink" title="2、RedisDesktopManager"></a>2、RedisDesktopManager</h3><p>连接Linux虚拟机上的redis（端口要保证打开）</p><p>地址为在虚拟机用查出ifconfig的网络地址</p><p>配置：</p><ul><li>名字：redis_6379</li><li>地址：xxxxx : 6379</li><li>验证（redis密码）: root</li></ul><p>测试连接 =&gt; 连接成功!</p><h3 id="3、Xshell"><a href="#3、Xshell" class="headerlink" title="3、Xshell"></a>3、Xshell</h3><h5 id="资源的位置"><a href="#资源的位置" class="headerlink" title="资源的位置"></a>资源的位置</h5><p>1、单机redis</p><ul><li>```<br>配置文件在： /usr/local/redis/bin/redis.conf<pre class="line-numbers language-none"><code class="language-none">- 启动命令：- - ```    跳转目录：cd /usr/local/redis/bin/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>```<br>启动redis服务：./redis-server redis.conf <pre class="line-numbers language-none"><code class="language-none">- ```  启动cli：./redis-cli -p 6379 -a root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul></li></ul><p>2、配置了主从分离复用和哨兵的redis</p><p><em><strong>详细过程见：</strong></em><a href="https://www.bilibili.com/video/BV1Ai4y1P7Tk?p=192">https://www.bilibili.com/video/BV1Ai4y1P7Tk?p=192</a></p><ul><li><p>配置文件在：（经过哨兵修改后）</p><ul><li><pre><code>主：/opt/redis/config/redis-6381.conf<pre class="line-numbers language-none"><code class="language-none">- ```  从：/opt/redis/config/redis-6379.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></code></pre></li><li><pre><code>从：/opt/redis/config/redis-6380.conf<pre class="line-numbers language-none"><code class="language-none">- 服务和cli启动命令：  - ```    跳转目录：cd /usr/local/redis/bin/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></code></pre></li><li><pre><code>启动redis_6381主服务：./redis-server /opt/redis/conf/redis-6381.conf <pre class="line-numbers language-none"><code class="language-none">- ```  启动redis_6379从服务：./redis-server /opt/redis/conf/redis-6379.conf <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></code></pre></li><li><pre><code>启动redis_6380从服务：./redis-server /opt/redis/conf/redis-6380.conf <pre class="line-numbers language-none"><code class="language-none">- ```  启动cli_6381主服务：./redis-cli -p 6381 -a root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></code></pre></li><li><p>```<br>启动cli_6379从服务：./redis-cli -p 6379 -a root</p><pre class="line-numbers language-none"><code class="language-none">- ```  启动cli_6380从服务：./redis-cli -p 6380 -a root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>哨兵服务（防止主服务挂机，而其他服务没有写的权限）</p><ul><li><pre><code>./redis-sentinel /opt/redis/conf/sentinel-26379.conf<pre class="line-numbers language-none"><code class="language-none">- ```  ./redis-sentinel /opt/redis/conf/sentinel-26380.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></code></pre></li><li><pre><code>./redis-sentinel /opt/redis/conf/sentinel-26381.conf</code></pre></li></ul></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> redis </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Swagger</title>
       <link href="/2022/04/02/swagger/"/>
       <url>/2022/04/02/swagger/</url>
